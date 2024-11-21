@@ -1,6 +1,4 @@
 
-markdown
-Copy code
 # Intelligent Research Assistant
 
 The **Intelligent Research Assistant** is a modular and extensible application designed to simplify research workflows by retrieving, summarizing, and presenting information. Its architecture allows seamless integration of APIs and tools, making it a valuable asset for academics, professionals, and enthusiasts.
