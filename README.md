@@ -10,14 +10,19 @@ The **Intelligent Research Assistant** is a modular and extensible application d
 
 ```plaintext
 intelligent_research_assistant/
-├── data/                     # Store API keys, sample outputs
-├── models/                   # Pre-trained models or fine-tuned models
-├── modules/
-│   ├── search.py             # Handles API calls for data retrieval
+├── data/ articles                     # Store Articles after retrieval
+├── models/
+│   ├── article_manager.py    # Transforms retreived document into PDF.
+│   ├── ieee.py               # Fetches Article data
+│   ├── interaction.py        # Handles user input and output  
+│   ├── search.py             # Handles searches
 │   ├── summarizer.py         # Summarizes fetched data
-│   ├── interaction.py        # Handles user input and output
+
+├── modules/
+
 ├── static/                   # Frontend (if using Flask)
 ├── templates/                # HTML templates (if using Flask)
-├── tests/                    # Unit and integration tests
+├── tests/                    
+│   ├── api_test.py           # Tests whether the API works.
 ├── app.py                    # Main script to run the app
 └── README.md                 # Documentation
